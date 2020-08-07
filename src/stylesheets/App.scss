@@ -1,0 +1,20 @@
+.App{
+    background-color: black;
+    color: white;
+}
+
+.img {
+    height: 200px;
+    width: 150px;
+}
+
+.characters{
+    height: 70px;
+    width: 150px;
+    background-color: blue;
+}
+
+.charactersRendered{
+    display: flex;
+    flex-direction: row;
+}
