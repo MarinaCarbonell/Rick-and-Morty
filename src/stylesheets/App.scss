@@ -1,6 +1,13 @@
-.App{
+body{
+    margin-top: 200px;
     background-color: black;
     color: white;
+}
+
+
+.characterCard{
+    display: flex;
+    flex-direction: column;
 }
 
 .img {
@@ -14,7 +21,3 @@
     background-color: blue;
 }
 
-.charactersRendered{
-    display: flex;
-    flex-direction: row;
-}

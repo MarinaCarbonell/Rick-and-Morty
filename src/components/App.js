@@ -1,6 +1,7 @@
 import React from 'react';
 import CharacterList from './CharacterList';
 import '../stylesheets/App.scss';
+import logo from '../images/logo.png';
 
 class App extends React.Component {
   constructor (props) {
@@ -29,9 +30,12 @@ class App extends React.Component {
 
   render () {
     return (
-      <div className="App">
-        <CharacterList characterArray={this.state.characterList} />
-      </div>
+      <body>
+        <img src={logo} alt="Rick and Morty" />
+        <div className="App">
+          <CharacterList characterArray={this.state.characterList} />
+        </div>
+      </body>
     );
   }
 }
