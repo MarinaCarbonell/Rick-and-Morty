@@ -23,7 +23,15 @@ class App extends React.Component {
       .then (response => response.json ())
       .then (data => {
         this.setState ({
-          charactersList: data.results,
+          charactersList: data.results.sort ((a, b) => {
+            if (a.name < b.name) {
+              return -1;
+            } else if (a.name > b.name) {
+              return 1;
+            } else {
+              return 0;
+            }
+          }),
         });
       });
   }
