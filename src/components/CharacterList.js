@@ -2,7 +2,6 @@ import React from 'react';
 import CharacterCard from './CharacterCard';
 
 const CharacterList = props => {
-  console.log (props);
   const charactersRendered = props.characterArray.map (singleCharacter => {
     return (
       <li key={singleCharacter.id}>
@@ -12,7 +11,7 @@ const CharacterList = props => {
   });
 
   return (
-    <ul class="charactersRendered">
+    <ul className="charactersRendered">
       {charactersRendered}
     </ul>
   );
