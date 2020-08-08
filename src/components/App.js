@@ -64,7 +64,11 @@ class App extends React.Component {
               filterName={this.state.filterName}
               handleFilters={this.handleFilters}
             />
-            <CharacterList characterArray={this.renderFilteredCharacters ()} />
+            <CharacterList
+              characterArray={this.renderFilteredCharacters ()}
+              filterName={this.state.filterName}
+            />
+
           </div>
         </Route>
         <Switch>

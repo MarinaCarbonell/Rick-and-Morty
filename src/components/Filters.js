@@ -6,8 +6,13 @@ const Filters = props => {
       filterInputName: ev.target.value,
     });
   };
+
+  const handleSubmit = event => {
+    event.preventDefault ();
+  };
+
   return (
-    <form className="form">
+    <form className="form" onSubmit={handleSubmit}>
       <div>
         <input
           type="text"
