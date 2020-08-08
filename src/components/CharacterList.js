@@ -1,5 +1,6 @@
 import React from 'react';
 import CharacterCard from './CharacterCard';
+import '../stylesheets/CharacterList.scss';
 
 const CharacterList = props => {
   if (props.characterArray.length === 0) {
@@ -18,7 +19,7 @@ const CharacterList = props => {
     });
 
     return (
-      <ul className="charactersRendered">
+      <ul className="characters__rendered">
         {charactersRendered}
       </ul>
     );

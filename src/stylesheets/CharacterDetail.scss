@@ -1,0 +1,33 @@
+.character__detail{
+    width: 50vw;
+    margin: auto;
+    color: white;
+    .logo{
+        padding-bottom: 25px;
+    }
+    .card__btn__return{
+        font-size: 20px;
+        text-align: right;
+    }
+    &__content{ 
+        box-sizing: border-box;
+        width: 50vw;
+        display: flex;
+        flex-direction: row;
+        background-color: cadetblue;
+        text-align: left;
+        font-size: 13px;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS';
+        color: white;
+        &__img{
+            padding: 30px;
+            width: 20vw;
+            margin:0;
+        }
+        &__properties{
+        background-color: cadetblue;
+        text-align: left;
+        padding: 30px;
+        }
+    }
+}

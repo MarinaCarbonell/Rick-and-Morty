@@ -1,4 +1,5 @@
 import React from 'react';
+import '../stylesheets/Filters.scss';
 
 const Filters = props => {
   const handleFilterName = ev => {
@@ -15,8 +16,8 @@ const Filters = props => {
     <form className="form" onSubmit={handleSubmit}>
       <div>
         <input
-          type="text"
           className="form__input-text"
+          type="text"
           id="filterName"
           value={props.filterName}
           onChange={handleFilterName}

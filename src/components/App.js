@@ -64,7 +64,7 @@ class App extends React.Component {
 
   render () {
     return (
-      <div className="div">
+      <div className="wrapper">
         <Route exact path="/">
           <img className="logo" src={logo} alt="Rick and Morty" />
           <div className="App">
