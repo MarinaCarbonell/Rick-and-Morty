@@ -1,3 +1,5 @@
+@import 'mixins.scss';
+
 .wrapper{
     margin:50px;
     text-align: center;
@@ -5,7 +7,14 @@
 }
 
 .logo{
-    width: 25vw;
+    width: 60vw;
+    @include tablet{
+        width: 40vw;
+        
+    }
+    @include desktop{
+        width: 25vw;   
+    }
 }
 
 

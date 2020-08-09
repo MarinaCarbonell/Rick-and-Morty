@@ -1,5 +1,7 @@
+@import 'mixins.scss';
+
 .character__card{
-    width: 20vw;
+    width: 70vw;
     background-color: cadetblue;
     text-align: left;
     font-size: 13px;
@@ -8,6 +10,13 @@
     .character__img{
         width: 100%;
         margin:0;
+    }
+    @include tablet{
+        width: 40vw;
+        
+    }
+    @include desktop{
+        width: 20vw;   
     }
 }
 
