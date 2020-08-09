@@ -1,7 +1,16 @@
+@import 'mixins.scss';
+
 .character__detail{
-    width: 50vw;
+    width: 70vw;
     margin: auto;
     color: white;
+    text-align: center;
+    @include tablet{
+        width: 60vw;
+    }
+    @include desktop{
+        width: 50vw;   
+    }
     .logo{
         padding-bottom: 25px;
     }
@@ -13,21 +22,44 @@
         box-sizing: border-box;
         width: 50vw;
         display: flex;
-        flex-direction: row;
+        flex-direction: column;
+        margin: auto;
         background-color: cadetblue;
         text-align: left;
         font-size: 13px;
         font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS';
         color: white;
+        @include tablet{
+            flex-direction: row;
+        }
+        @include desktop{
+            flex-direction: row;
+        }
         &__img{
-            padding: 30px;
-            width: 20vw;
-            margin:0;
+            padding: 10px;
+            width: 40vw;
+            margin: auto;
+            @include tablet{
+                width: 40vw;
+                height: auto;
+                padding: 30px;
+            }
+            @include desktop{
+                width: 20vw;
+                height: auto;
+                padding: 30px;
+            }
         }
         &__properties{
-        background-color: cadetblue;
-        text-align: left;
-        padding: 30px;
-        }
+            background-color: cadetblue;
+            text-align: left;
+            padding: 10px;
+            @include tablet{
+                padding: 30px;
+            }
+            @include desktop{
+                padding: 30px;
+            }
+        }   
     }
 }
