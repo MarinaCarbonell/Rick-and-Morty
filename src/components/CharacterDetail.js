@@ -26,8 +26,12 @@ const CharacterDetail = props => {
 
   return (
     <div className="character__detail">
-      <img className="logo" src={logo} alt="Rick and Morty" />
-      <Link to={`/`} className="card__btn__return">Volver</Link>
+      <img
+        className="character__detail__logo"
+        src={logo}
+        alt="Rick and Morty"
+      />
+      <Link to={`/`} className="character__detail__return">Volver</Link>
       <div className="character__detail__content">
         <img
           className="character__detail__content__img"

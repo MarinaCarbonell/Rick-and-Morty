@@ -4,19 +4,32 @@
     width: 70vw;
     margin: auto;
     color: white;
-    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     @include tablet{
         width: 60vw;
     }
     @include desktop{
         width: 50vw;   
     }
-    .logo{
+    &__logo{
         padding-bottom: 25px;
+        width: 40vw;
+        @include tablet{
+            width: 60vw;
+            
+        }
+        @include desktop{
+            width: 40vw;   
+        }
     }
-    .card__btn__return{
+    &__return{
         font-size: 20px;
-        text-align: right;
+        margin-bottom: 15px;
+        padding: 5px;
+        border: 2px solid cadetblue;
     }
     &__content{ 
         box-sizing: border-box;
@@ -34,15 +47,16 @@
         }
         @include desktop{
             flex-direction: row;
+            font-size: 20px;
         }
         &__img{
             padding: 10px;
             width: 40vw;
             margin: auto;
             @include tablet{
-                width: 40vw;
+                width: 25vw;
                 height: auto;
-                padding: 30px;
+                padding: 10px;
             }
             @include desktop{
                 width: 20vw;
