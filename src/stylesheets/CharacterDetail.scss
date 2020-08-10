@@ -54,12 +54,10 @@
             margin: auto;
             @include tablet{
                 width: 25vw;
-                height: auto;
                 padding: 10px;
             }
             @include desktop{
                 width: 20vw;
-                height: auto;
                 padding: 30px;
             }
         }
