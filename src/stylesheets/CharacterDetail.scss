@@ -33,7 +33,7 @@
     }
     &__content{ 
         box-sizing: border-box;
-        width: 50vw;
+        width: 60vw;
         display: flex;
         flex-direction: column;
         margin: auto;
@@ -50,7 +50,6 @@
             font-size: 20px;
         }
         &__img{
-            width: 40vw;
             margin: auto;
             @include tablet{
                 width: 25vw;
